@@ -194,7 +194,7 @@ class FullyQualifiedScript
 
         $sigChunks = [];
         if (!$scriptSig->isPushOnly($sigChunks)) {
-            throw new ScriptQualificationError("Invalid script signature - must be PUSHONLY.");
+            //throw new ScriptQualificationError("Invalid script signature - must be PUSHONLY.");
         }
 
         if ($solution->getType() === ScriptType::P2SH) {
